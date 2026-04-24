@@ -1,0 +1,158 @@
+<!-- index.html --><!DOCTYPE html>
+
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grand Prix do Théo - Convite Hot Wheels</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Lexend -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Style.css link -->
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="bg-zinc-950 text-white font-lexend overflow-x-hidden">
+<!-- Header / Nav -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-zinc-950/95 backdrop-blur-sm border-b-4 border-orange-600 skew-y-[-1deg] shadow-[4px_4px_0px_0px_rgba(192,192,192,1)]">
+<div class="text-2xl font-black italic tracking-tighter text-orange-600 drop-shadow-[2px_2px_0px_rgba(255,255,255,1)]">
+            GRAND PRIX DO THÉO
+        </div>
+<nav class="hidden md:flex gap-6">
+<a class="text-zinc-400 font-bold uppercase hover:text-orange-400 transition-all" href="#pit-stop">PIT STOP</a>
+<a class="text-zinc-400 font-bold uppercase hover:text-orange-400 transition-all" href="#localizacao">LOCALIZAÇÃO</a>
+<a class="text-zinc-400 font-bold uppercase hover:text-orange-400 transition-all" href="#rsvp">RSVP</a>
+</nav>
+<a class="bg-orange-600 px-6 py-2 rounded font-black italic uppercase text-white hover:scale-105 transition-transform active:translate-y-1" href="#rsvp">
+            PARTICIPAR
+        </a>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 px-4 bg-[url('assets/hero-bg.jpg')] bg-cover bg-center" id="pit-stop">
+<!-- Overlay if hero image is specified as URL, but updated to follow prefix rule if local asset -->
+<div class="absolute inset-0 bg-zinc-950/70"></div>
+<div class="relative z-10 text-center animate-fade-in">
+<span class="bg-orange-600 text-white px-4 py-1 font-black italic uppercase skew-x-[-10deg] inline-block mb-4">
+                LIGUEM SEUS MOTORES
+            </span>
+<h1 class="text-6xl md:text-8xl font-black italic text-transparent bg-clip-text bg-gradient-to-b from-white via-orange-500 to-orange-700 uppercase leading-none drop-shadow-2xl">
+                GRAND PRIX DO<br/>THÉO
+            </h1>
+<p class="text-xl md:text-3xl font-black italic text-zinc-100 mt-4 uppercase tracking-wider drop-shadow-lg">
+                CELEBRANDO 6 ANOS DE ACELERAÇÃO MÁXIMA!
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-2xl mx-auto">
+<!-- Data -->
+<div class="bg-zinc-900/90 border-r-8 border-orange-600 p-6 skew-x-[-5deg] shadow-xl">
+<div class="text-orange-500 mb-2">📅</div>
+<p class="text-zinc-400 text-sm font-bold uppercase">DIA DA CORRIDA</p>
+<p class="text-3xl font-black">31 DE MAIO</p>
+</div>
+<!-- Hora -->
+<div class="bg-zinc-900/90 border-r-8 border-orange-600 p-6 skew-x-[-5deg] shadow-xl">
+<div class="text-orange-500 mb-2">🕒</div>
+<p class="text-zinc-400 text-sm font-bold uppercase">LARGADA</p>
+<p class="text-3xl font-black">16:00 EM PONTO</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Checkered Divider -->
+<div class="h-10 bg-white bg-[radial-gradient(#000_15%,transparent_16%),radial-gradient(#000_15%,transparent_16%)] bg-[length:20px_20px] bg-[0_0,10px_10px]"></div>
+<!-- Details Section -->
+<section class="py-20 px-6 bg-zinc-900">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-black italic uppercase text-orange-600 mb-8">
+                    DETALHES DA PISTA <span class="text-white">&amp; MISSÃO</span>
+</h2>
+<div class="space-y-6">
+<div class="flex gap-4 p-4 bg-zinc-950 border-l-4 border-orange-600">
+<div class="text-2xl">🏁</div>
+<div>
+<h3 class="font-black uppercase text-zinc-100">O EVENTO PRINCIPAL</h3>
+<p class="text-zinc-400">Venha acelerar conosco para celebrar o 6º aniversário do Théo, uma data cheia de alegria, velocidade e momentos inesquecíveis!</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 bg-zinc-950 border-l-4 border-blue-600" id="localizacao">
+<div class="text-2xl">📍</div>
+<div>
+<h3 class="font-black uppercase text-zinc-100">QUARTEL GENERAL DA VELOCIDADE</h3>
+<p class="text-zinc-400">Habib's Rosa e Silva - Av. Conselheiro Rosa e Silva, 901, Graças, Recife - PE</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Google Maps Embed -->
+<div class="relative group">
+<div class="absolute -inset-2 bg-orange-600 skew-x-[-2deg] rounded-lg opacity-50"></div>
+<div class="relative h-[400px] w-full border-4 border-white overflow-hidden rounded-lg">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.536302528178!2d-34.89886402396349!3d-8.046636780369874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18899806b7a5%3A0xe543e0d867c4e20b!2sHabib's%20-%20Rosa%20e%20Silva!5e0!3m2!1spt-BR!2sbr!4v1715620000000!5m2!1spt-BR!2sbr" style="border:0;" width="100%">
+</iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- Checkered Divider -->
+<div class="h-10 bg-white bg-[radial-gradient(#000_15%,transparent_16%),radial-gradient(#000_15%,transparent_16%)] bg-[length:20px_20px] bg-[0_0,10px_10px]"></div>
+<!-- RSVP Section -->
+<section class="py-20 px-6 bg-zinc-950 flex flex-col items-center" id="rsvp">
+<div class="relative w-full max-w-2xl bg-zinc-900 p-8 md:p-12 border-b-8 border-orange-600 shadow-2xl overflow-hidden">
+<div class="absolute top-0 right-0 bg-orange-600 text-white text-[10px] font-black px-8 py-1 rotate-45 translate-x-6 -translate-y-2 uppercase tracking-widest">
+                RSVP OBRIGATÓRIO
+            </div>
+<div class="text-center mb-10">
+<h2 class="text-3xl md:text-4xl font-black italic uppercase tracking-tighter">INSCREVA-SE PARA A CORRIDA</h2>
+<div class="h-1 w-24 bg-orange-600 mx-auto mt-4"></div>
+</div>
+<!-- Formulário Sheet Monkey -->
+<form action="https://api.sheetmonkey.io/form/nMJZiQKH14tifhZvTerbZH" class="space-y-8" id="rsvp-form" method="post">
+<div>
+<label class="block text-xs font-black uppercase text-zinc-500 mb-2 tracking-widest">NOME COMPLETO DO PILOTO</label>
+<input class="w-full bg-zinc-950 border-b-2 border-zinc-800 focus:border-orange-600 p-4 text-white font-bold outline-none transition-colors" name="Nome" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-black uppercase text-zinc-500 mb-2 tracking-widest">NÚMERO DA EQUIPE DE APOIO (CONVIDADOS)</label>
+<input class="w-full bg-zinc-950 border-b-2 border-zinc-800 focus:border-orange-600 p-4 text-white font-bold outline-none transition-colors" min="1" name="Convidados" required="" type="number" value="1"/>
+</div>
+<div class="space-y-4">
+<label class="block text-xs font-black uppercase text-zinc-500 mb-2 tracking-widest">CONFIRMAR PRESENÇA?</label>
+<div class="grid grid-cols-2 gap-4">
+<label class="cursor-pointer">
+<input checked="" class="hidden peer" name="Presenca" type="radio" value="Sim"/>
+<div class="bg-zinc-950 p-4 text-center border-2 border-zinc-800 peer-checked:border-orange-600 peer-checked:bg-orange-600/10 font-black italic uppercase text-sm transition-all hover:bg-zinc-800">
+                                VOU CORRER!
+                            </div>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="Presenca" type="radio" value="Não"/>
+<div class="bg-zinc-950 p-4 text-center border-2 border-zinc-800 peer-checked:border-zinc-500 peer-checked:bg-zinc-800 font-black italic uppercase text-sm transition-all hover:bg-zinc-800">
+                                FICAREI NO BOX
+                            </div>
+</label>
+</div>
+</div>
+<button class="w-full bg-orange-600 p-6 text-xl font-black italic uppercase tracking-wider hover:bg-orange-700 hover:scale-[1.02] active:scale-95 transition-all shadow-lg border-b-4 border-orange-800" type="submit">
+                    CONFIRMAR INSCRIÇÃO
+                </button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 flex flex-col items-center gap-6 bg-zinc-950 border-t-4 border-zinc-800">
+<div class="flex gap-4">
+<a class="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest" href="#">CONTATAR EQUIPE</a>
+<span class="text-zinc-800">|</span>
+<a class="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest" href="#">REPLAY</a>
+</div>
+<div class="flex items-center gap-4 w-full max-w-md">
+<div class="h-[2px] flex-1 bg-gradient-to-r from-transparent to-orange-600"></div>
+<p class="text-orange-600 font-black italic text-sm uppercase tracking-tighter">EQUIPE DE CORRIDA DO THÉO</p>
+<div class="h-[2px] flex-1 bg-gradient-to-l from-transparent to-orange-600"></div>
+</div>
+<p class="text-zinc-500 text-[10px] uppercase font-bold tracking-[0.3em]">
+            © 2026 EQUIPE DE CORRIDA DO THÉO | SEM LIMITES
+        </p>
+</footer>
+<!-- Scripts.js link -->
+<script src="scripts.js"></script>
+</body></html>
