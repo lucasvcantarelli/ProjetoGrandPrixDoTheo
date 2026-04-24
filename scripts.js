@@ -2,11 +2,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const rsvpForm = document.getElementById('rsvp-form');
-
+// Lógica para o formulário de RSVP
     if (rsvpForm) {
         rsvpForm.addEventListener('submit', (e) => {
-            // Se você quiser adicionar uma lógica extra antes de enviar
-            // Como um loading state no botão
+        // Feedback visual de "acelerando" no botão de envio
             const submitBtn = rsvpForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerText;
             
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
 
             // O formulário será enviado normalmente para o endpoint do Sheet Monkey
-            // via atributo 'action' e 'method' definidos no HTML.
+           
             
             //  AJAX (Fetch) para evitar recarregar a página
             
@@ -38,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Efeito de Parallax suave no Hero (opcional)
+    // Efeito de Parallax suave no Hero 
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const heroBg = document.querySelector('section#pit-stop');
